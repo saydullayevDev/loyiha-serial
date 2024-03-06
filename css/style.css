@@ -259,6 +259,7 @@ a {
 .offer__slider-prev {
   margin-right: 10px;
   cursor: pointer;
+  /* display: none; */
 }
 .offer__slider-next {
   margin-left: 10px;
@@ -289,6 +290,7 @@ a {
   align-items: flex-start;
 }
 .menu .title {
+  margin: 30px 0;
   text-align: center;
 }
 .menu__field {

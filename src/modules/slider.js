@@ -62,6 +62,7 @@ function slider({
     return parseInt(str.replace(/\D/g, ''))
   }
 
+  // NEXT
   next.addEventListener('click', () => {
     // offset == +width.slice(0, width.length - 2) * (slides.length - 1)
     // (offset == deleteNotDigits(width) * (slides.length - 1)
@@ -91,6 +92,8 @@ function slider({
     dots[slideIndex - 1].style.opacity = 1
   })
 
+  // PREV
+  prev.style.display = 'none'
   prev.addEventListener('click', () => {
     if (offset == 0) {
       //offset == +width.slice(0, width.length - 2) * (slides.length - 1)

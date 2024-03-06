@@ -459,6 +459,8 @@ function slider(_ref) {
   function deleteNotDigits(str) {
     return parseInt(str.replace(/\D/g, ''));
   }
+
+  // NEXT
   next.addEventListener('click', function () {
     // offset == +width.slice(0, width.length - 2) * (slides.length - 1)
     // (offset == deleteNotDigits(width) * (slides.length - 1)
@@ -485,6 +487,9 @@ function slider(_ref) {
     });
     dots[slideIndex - 1].style.opacity = 1;
   });
+
+  // PREV
+  prev.style.display = 'none';
   prev.addEventListener('click', function () {
     if (offset == 0) {
       //offset == +width.slice(0, width.length - 2) * (slides.length - 1)
